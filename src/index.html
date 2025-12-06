@@ -5,7 +5,20 @@
     <title>Mensaje</title>
 </head>
 <body>
-    <p>Hola SENA</p>
-    <p>Este es mi primer taller con Git y CI.</p>
+
+    <h2>Lista</h2>
+    <ul id="lista"></ul>
+
+    <button id="agregar">Agregar</button>
+
+    <script src="app.js"></script>
+    <script>
+        // Cada vez que se hace clic, agrega un ítem a la lista
+        document.getElementById("agregar").addEventListener("click", () => {
+            agregarItem("Nuevo elemento");
+        });
+    </script>
+
 </body>
 </html>
+
